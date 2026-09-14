@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundación Verter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0E2622;
+    --paper: #F4F6F3;
+    --ink: #152825;
+    --ink-soft: #516560;
+    --primary: #2F6F64;
+    --primary-dark: #1E4C44;
+    --gold: #C79A4B;
+    --line: #DCE3DD;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  h1, h2, .brand { font-family: 'Fraunces', serif; }
+
+  header {
+    background: radial-gradient(ellipse at 30% 10%, #1E4C44, #0E2622 60%);
+    color: #F7F5EE;
+    padding: 90px 24px 100px;
+    text-align: center;
+  }
+  .anchor {
+    width: 52px; height: 52px; margin: 0 auto 22px;
+  }
+  .brand { font-size: 15px; letter-spacing: 0.06em; color: var(--gold); margin-bottom: 18px; }
+  header h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 600; margin: 0 0 18px; max-width: 640px; margin-left: auto; margin-right: auto; }
+  header p { font-size: 17px; color: #C7D6D1; max-width: 480px; margin: 0 auto; }
+
+  main { max-width: 720px; margin: 0 auto; padding: 70px 24px; }
+  section { margin-bottom: 64px; }
+  section:last-child { margin-bottom: 0; }
+  h2 { font-size: 26px; font-weight: 500; margin: 0 0 16px; }
+  p { font-size: 16.5px; color: var(--ink-soft); margin: 0 0 14px; }
+
+  .tarjeta {
+    background: #fff; border: 1px solid var(--line); border-radius: 16px;
+    padding: 28px; margin-top: 24px;
+  }
+  .tarjeta h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; }
+  .tarjeta p { margin: 0; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 36px 24px 48px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--primary-dark); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+
+  .lista { list-style: none; padding: 0; margin: 0; }
+  .lista li { padding-left: 26px; position: relative; margin-bottom: 10px; color: var(--ink-soft); }
+  .lista li::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="anchor" viewBox="0 0 24 24" fill="none" stroke="#C79A4B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="5" r="2.3"/>
+    <path d="M12 7.3V21"/>
+    <path d="M5 13a7 7 0 0 0 14 0"/>
+    <path d="M3 13h3M18 13h3"/>
+  </svg>
+  <div class="brand">FUNDACIÓN VERTER</div>
+  <h1>Un punto fijo cuando las cosas se mueven.</h1>
+  <p>Trabajamos para que el acceso a la salud mental no dependa de cuánto puedas esperar.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Quiénes somos</h2>
+    <p>
+      Fundación Verter es una organización sin fines de lucro dedicada a ampliar el acceso a la
+      atención en salud mental. Creemos que la contención psicológica y psiquiátrica debería
+      estar disponible en el momento en que se la necesita, no semanas después.
+    </p>
+  </section>
+
+  <section>
+    <h2>Qué hacemos</h2>
+    <ul class="lista">
+      <li>Conectamos a personas con profesionales de la psicología y la psiquiatría de forma inmediata.</li>
+      <li>Sostenemos un equipo de profesionales matriculados, con seguimiento y control de calidad continuo.</li>
+      <li>Impulsamos herramientas digitales para bajar las barreras de acceso a la atención.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nuestro proyecto: Ancla</h2>
+    <div class="tarjeta">
+      <h3>Atención por videollamada, cuando hace falta</h3>
+      <p>
+        Ancla es la app de Fundación Verter para acceder a sesiones de psicología y psiquiatría
+        por videollamada, tanto por demanda espontánea como por turno programado — con historia
+        clínica digital protegida y profesionales verificados.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>
+      ¿Querés saber más sobre nuestro trabajo?<br>
+      Escribinos a <a href="mailto:contacto@fundacionverter.org">contacto@fundacionverter.org</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Fundación Verter. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
